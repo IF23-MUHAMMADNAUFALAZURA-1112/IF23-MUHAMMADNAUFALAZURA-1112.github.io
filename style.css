@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid navy;
+    padding-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid navy;
+}
+
+.header-text h1 {
+    font-size: 2em;
+    color: navy;
+}
+
+/* Kotak untuk setiap section */
+.section {
+    border: 2px solid navy;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: navy;
+}
+
+p, ul {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+a {
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.job {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 4px solid navy;
+}
+
+.job h3 {
+    margin-bottom: 5px;
+    color: navy;
+}
+
+.job p {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Bagian keterampilan */
+.skills-list {
+    display: flex;             /* Flexbox untuk menata item secara horizontal */
+    justify-content: space-between;
+    flex-wrap: wrap;           /* Agar item tetap rapi di layar kecil */
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 120px;              /* Menentukan lebar setiap item */
+}
+
+.skill-icon {
+    width: 60px;               /* Ukuran ikon keterampilan */
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Responsiveness untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+    .skills-list {
+        justify-content: center;
+    }
+    
+    .skill-item {
+        width: 100px;
+    }
+    
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
