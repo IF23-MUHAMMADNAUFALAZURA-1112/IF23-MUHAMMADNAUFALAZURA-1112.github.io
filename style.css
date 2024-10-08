@@ -36,9 +36,10 @@ header {
 
 .profile-photo {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+    height: auto; /* Agar tinggi proporsional dengan lebar */
+    max-height: 150px; /* Membatasi tinggi maksimum */
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    object-fit: cover; /* Gambar tetap proporsional tanpa terdistorsi */
     margin-right: 20px;
     border: 3px solid navy;
 }
